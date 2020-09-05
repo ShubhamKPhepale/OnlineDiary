@@ -1,0 +1,21 @@
+<div class="container-fluid">
+    <div class="row bg-dark text-light sticky-top" style="height: 60px">
+        <div class="col d-flex justify-content-start align-items-center">
+            <fa-icon [icon]="faBookOpen" style="font-size: 30px"></fa-icon>
+            <h4 class="ml-2 text-danger">My Diary</h4>
+        </div>
+        <div class="col d-flex justify-content-end align-items-center">
+            <a class="btn btn-outline-light mr-1" routerLink="/home/PersonalDiary">PersonalDiary</a>
+            <a class="btn btn-outline-light mr-1" routerLink="/home/WeddingDiary">WeddingDiary</a>
+            <a class="btn btn-outline-light mr-1" routerLink="/home/SchoolDiary">SchoolDiary</a>
+            <a class="btn btn-outline-light mr-1" routerLink="/home/contactus">
+        Contact Us
+      </a>
+
+            <button class="btn btn-outline-light mr-1" (click)="processLogout()">
+        Log Out
+      </button>
+        </div>
+    </div>
+    <router-outlet></router-outlet>
+</div>

@@ -1,0 +1,30 @@
+<div class="container-fluid">
+
+    <div class="row bg-warning" style="height:50vh;width:102%;">
+        <div class="col-3"></div>
+        <div class="col-6 d-flex bg-light" style="margin-top: 52px;height: 300px;width: 200px; justify-content: center;">
+            <h2>Uplod File</h2>
+            <div style="margin-top:50px;justify-content: center;">
+                <input type="file" name="image" (change)="selectImage($event)" />
+            </div>
+            <div style="margin-top:50px;justify-content: center;">
+                <button type="submit" (click)="onSubmit()">Upload</button>
+            </div>
+        </div>
+
+    </div>
+    <div class="row bg-success" style="height:50vh;width:102%;">
+        <div class="col-3"></div>
+        <div class="col-6 d-flex bg-light" style="margin-top: 52px;height: 300px;width: 200px; justify-content: center;">
+            <h2>Uplod File</h2>
+            <div style="margin-top:50px;justify-content: center;">
+                <input type="file" name="images" multiple (change)="selectMultipleImage($event)" />
+            </div>
+            <div style="margin-top:50px;justify-content: center;">
+                <button type="submit" (click)="onMultipleSubmit()">Multiple Upload</button>
+            </div>
+        </div>
+
+    </div>
+
+</div>

@@ -1,0 +1,46 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col d-flex flex-column justify-content-center align-items-center backgroundimg1">
+            <div>
+                <fa-icon [icon]="faBookOpen" style="font-size: 54px"></fa-icon>
+            </div>
+            <div class="h3">Welcome to my Appplication</div>
+            <div class="h6 font-italic" style="color:red;text-align: justify;justify-content: center;text-align: center;align-content: center;">
+                " Don’t wait for tomorrow, do it all today. If tomorrow never comes, You’ll never regret a day... "
+            </div>
+            <div class="h6 font-italic ">
+                Just do the Registration..
+            </div>
+
+        </div>
+        <div class="col d-flex flex-column justify-content-center align-items-center backgroundimg2" [formGroup]="fbFormGroup">
+            <div class="alert alert-danger" role="alert" *ngIf="uiInvalidCredential">
+                Something is Wrong...Please check!!!
+            </div>
+
+            <div class="h4">Create Account</div>
+
+            <div>
+                <input type="text" style="justify-content:center ;text-align: center; align-items:center;" placeholder="Enter Username" class="form-control" formControlName="username" />
+            </div>
+
+            <div class="mt-1">
+                <input type="password" style="justify-content:center ;text-align: center; align-items:center;" placeholder="Enter Password" class="form-control" formControlName="password" />
+            </div>
+
+            <div class="mt-1">
+                <input type="text" style="justify-content:center ;text-align: center; align-items:center;" placeholder="Enter Email" class="form-control" formControlName="email" />
+            </div>
+
+            <div class="mt-1">
+                <input type="text" style="justify-content:center ;text-align: center; align-items:center;" placeholder="Enter Mobile" class="form-control" formControlName="mobile" />
+            </div>
+
+            <button style="justify-content:center ;text-align: center; align-items:center;" class="btn btn-sm btn-dark mt-2 mb-2" [disabled]="!fbFormGroup.valid" (click)="registerHere()">
+        Register Here
+      </button>
+
+            <a routerLink="/login">Login Here</a>
+        </div>
+    </div>
+</div>

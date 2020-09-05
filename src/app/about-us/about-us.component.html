@@ -1,0 +1,36 @@
+<div class="row backgroundimg2">
+    <div class="container-fluid">
+        <div class="row bg-dark sticky-top">
+            <div class="col d-flex align-items-center text-danger h5">
+                My Diary</div>
+
+            <div class="col d-flex align-items-center justify-content-end">
+                <button class="btn btn-sm btn-secondary mr-1" (click)="gotoRoute('aboutus')">
+              AboutUs
+            </button>
+                <button class="btn btn-sm btn-secondary mr-1
+                " (click)="gotoRoute('login')">
+                Login
+              </button>
+                <button class="btn btn-sm btn-secondary mr-1
+                " (click)="gotoRoute('register')">
+                Registration
+              </button>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-6"></div>
+            <div class="col-3 text-dark" style="height: 40vh; width: 30vw; margin-top: 100px;">
+                <div style="text-align: justify;justify-content: center;text-align: center;align-content: center;">
+                    <h4 class="font-italic" style="margin-top:80px;">Wlecome to My Diary and Enjoy Your Buetifull Stories..</h4>
+
+                    <h2 style="color: red; margin-top:20px ;">"Every thing Start With A Dream"</h2>
+                </div>
+            </div>
+        </div>
+
+        <!-- TO Make Sticky Works-->
+        <router-outlet></router-outlet>
+    </div>
+</div>

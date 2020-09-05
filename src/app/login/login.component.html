@@ -1,0 +1,33 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col d-flex flex-column justify-content-center align-items-center backgroundimg1">
+            <div>
+                <fa-icon [icon]="faBookOpen" style="font-size: 70px"></fa-icon>
+            </div>
+            <div class="h3">Welcome to My Diary</div>
+
+            <div class="h6">
+                Login To Account and Start journey with us..
+            </div>
+        </div>
+        <div class="col bg-light d-flex flex-column justify-content-center align-items-center backgroundimg2 " [formGroup]="fbFormGroup">
+            <div class="alert alert-danger" role="alert" *ngIf="uiInvalidCredential">
+                Something is Wrong...Please check!!!
+            </div>
+
+            <div class="h4">Login To Account</div>
+            <div>
+                <input type="text" placeholder="Enter Username" class="form-control" formControlName="username" />
+            </div>
+
+            <div class="mt-1">
+                <input type="password" placeholder="Enter Password" class="form-control" formControlName="password" />
+            </div>
+
+            <button class="btn btn-sm btn-warning mt-2 mb-2" [disabled]="!fbFormGroup.valid" (click)="loginProcessHere()">
+        Login Here
+      </button>
+            <a routerLink="/register">Register Here</a>
+        </div>
+    </div>
+</div>

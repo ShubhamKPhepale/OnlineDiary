@@ -1,0 +1,32 @@
+.backgroundimg1 {
+    background-image: url('../../assets/B.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 92vh;
+    width: 102%;
+}
+
+.backgroundimg2 {
+    background-image: url('../../assets/C.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 102%;
+}
+
+.servicecol {
+    margin-top: -150px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.marginblock {
+    margin-top: -80px;
+}
+
+.marginblock2 {
+    margin-top: 15px;
+}
